@@ -27,24 +27,28 @@ function App() {
             <section id="user-input">
                 <div className="input-group">
                     <UserInput
-                        fieldName="initialInvestment"
+                        fieldName="Initial Investment"
+                        fieldID="initialInvestment"
                         value={inputs.initialInvestment}
                         onInputChange={handleInputChange}
                     />
                     <UserInput
-                        fieldName="annualInvestment"
+                        fieldName="Annual Investment"
+                        fieldID="annualInvestment"
                         value={inputs.annualInvestment}
                         onInputChange={handleInputChange}
                     />
                 </div>
                 <div className="input-group">
                     <UserInput
-                        fieldName="expectedReturn"
+                        fieldName="Expected Return"
+                        fieldID="expectedReturn"
                         value={inputs.expectedReturn}
                         onInputChange={handleInputChange}
                     />
                     <UserInput
-                        fieldName="duration"
+                        fieldName="Duration"
+                        fieldID="duration"
                         value={inputs.duration}
                         onInputChange={handleInputChange}
                     />
