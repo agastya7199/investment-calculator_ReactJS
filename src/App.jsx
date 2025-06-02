@@ -24,7 +24,32 @@ function App() {
     return (
         <>
             <Header />
-            <UserInput inputs={inputs} onInputChange={handleInputChange} />
+            <section id="user-input">
+                <div className="input-group">
+                    <UserInput
+                        fieldName="initialInvestment"
+                        value={inputs.initialInvestment}
+                        onInputChange={handleInputChange}
+                    />
+                    <UserInput
+                        fieldName="annualInvestment"
+                        value={inputs.annualInvestment}
+                        onInputChange={handleInputChange}
+                    />
+                </div>
+                <div className="input-group">
+                    <UserInput
+                        fieldName="expectedReturn"
+                        value={inputs.expectedReturn}
+                        onInputChange={handleInputChange}
+                    />
+                    <UserInput
+                        fieldName="duration"
+                        value={inputs.duration}
+                        onInputChange={handleInputChange}
+                    />
+                </div>
+            </section>
 
             <Results inputs={inputs} />
         </>
